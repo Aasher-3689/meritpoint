@@ -80,8 +80,7 @@ header {
 }
 
 legend {
-    border-radius: 12px;
-    padding: 0 8px;
+    padding: 0 4px;
     margin-left: 8px;
     font-size: 20px;
     font-family: "3", "sans-serif";
@@ -105,10 +104,9 @@ input {
     height: 2rem;
     border: none;
     outline: none;
-    box-shadow: 0 1px 1px #113a9a8e;
+    border-bottom: 1px dotted #113a9a8e;
     padding: 0 8px;
     font-size: 1rem;
-    border-radius: 12px;
 }
 
 input::-webkit-outer-spin-button,
