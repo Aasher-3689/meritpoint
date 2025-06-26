@@ -45,7 +45,7 @@ header {
     display: flex;
     width: 100%;
     align-items: center;
-    padding: 3rem 3rem;
+    padding: 2rem 3rem;
     a, a span{
         font-size: 2rem;
         text-decoration: none;
@@ -144,4 +144,4 @@ footer a:hover {
 
 /*////////////////////////////////////////////////////////*/
 
-@media only screen and (max-width:540px) {header {padding: 3rem 1.5rem;}}
+@media only screen and (max-width:540px) {header {padding: 1rem 1.5rem;}}
