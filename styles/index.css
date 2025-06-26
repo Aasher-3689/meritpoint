@@ -89,8 +89,6 @@ footer {
     text-align: center;
     padding: 5rem, 0;
     min-height: 3rem;
-    position: sticky;
-    bottom: 0;
     align-content: center;
 }
 
