@@ -41,6 +41,7 @@ main {
 }
 
 header {
+    box-shadow: 0 6px rgb(17,81,154) inset, 0 -2px 1px rgb(17,81,154) inset;
     height: 5rem;
     display: flex;
     width: 100%;
