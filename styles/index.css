@@ -29,6 +29,7 @@ body, html {
 body {display: flex; flex-direction: column;}
 
 header {
+    box-shadow: 0 6px rgb(17,81,154) inset, 0 -2px 1px rgb(17,81,154) inset;
     height: 5rem;
     display: flex;
     flex-direction: row;
@@ -36,7 +37,7 @@ header {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 3rem;
+    padding: 2rem 3rem;
     h1, h1 span{
         font-family: "3", "sans-serif";
         cursor: url("../assets/images/pointer.png"), auto;
@@ -46,7 +47,7 @@ header {
         height: 2rem;
         border: none;
         outline: none;
-        border-bottom: 2px solid #113a9a;
+        border-bottom: 1px solid #113a9a;
         padding: 0 8px;
         font-size: 1rem;
         transition: width 0.3s ease-in-out;
@@ -115,7 +116,7 @@ footer a:hover {
 @media only screen and (max-width:465px) {
     header {
         column-gap: 2rem;
-        padding: 3rem 1.5rem;
+        padding: 2rem 1.5rem;
     }
     .search {
         font-size: 14px !important;
