@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Muhammad Aasher">
     <meta name="description" content="You can request missing universities in MeritPoint through this form. We will add them as soon as possible. MeritPoint is a web platform that provides undergraduate merit/aggregate calculators for universities across Pakistan, all presented in a clean and user-friendly format.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="form-uniNotFound.css"/>
 </head>
 <body>
@@ -15,11 +18,39 @@
         </a>
     </header>
     <main>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfuGFhxArCi3nUlaXyX_YY8sN2K2_CsLhFePnpjHZVxtFMAcA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <form id="form">
+            <div>
+                <h2>Request for University Addition</h2>
+                <p>Didn't find your university?<br>
+                Just fill out this form with the required details — we'll add it within a day or two!<br>
+                <strong>OR</strong><br>
+                You can also contact us directly at: azadpanchi3689@gmail.com<br><br>
+                <strong>Note:</strong> This form is officially associated with <a href="../index.html" target="_blank">Meritpoint</a>.</p>
+            </div>
+            <hr style="border: 1px solid rgb(218, 220, 224);">
+            <div>
+                <label><strong>University Name</strong> <span style="color:rgb(194, 42, 42)">*</span></label><br>
+                <input type="text" id="university-name" name="university-name" placeholder="Your answer" required>
+            </div>
+            <hr style="border: 1px solid rgb(218, 220, 224);">
+            <div>
+                <label><strong>University Site</strong> <span style="color:rgb(194, 42, 42)">*</span></label><br>
+                <input type="url" id="university-site" name="university-site" placeholder="Your answer" required>
+            </div>
+            <hr style="border: 1px solid rgb(218, 220, 224);">
+            <div>
+                <label><strong>Additional Information</strong></label><br>
+                <textarea id="additional-information" name="additional-information" placeholder="Optional"></textarea>
+            </div>
+            <div>
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
     </main>
     <footer>
         <p>&copy <a href="https://github.com/Aasher-3689/" target="_blank">Aasher-3689</a>
            &bull; <a href="../index.html">Back to Home</a></p>
     </footer>
+    <script src="./form-uniNotFound.js"></script>
 </body>
 </html>
