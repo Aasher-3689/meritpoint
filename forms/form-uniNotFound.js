@@ -8,12 +8,19 @@ const updateFormBad = `<div>
                          <p>Try agian!</p>
                        </div>`;            
 
+const loader = document.getElementById("loader");
+/*##################################################################################*/
+
+
 const form = document.getElementById("form");
 form.addEventListener("submit", async function(event) {
+
     event.preventDefault();
 
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
+
+    loader.style.display = "block";
 
     const request = await fetch("https://script.google.com/macros/s/AKfycbzWtmg3h_VbNGdsmMRBt5M_SCghp48Unm6pwD5zKwzvOGY8hTj0uyxT6Kx8CBW7xDCEBQ/exec",
                                 {method: "POST",
@@ -22,6 +29,8 @@ form.addEventListener("submit", async function(event) {
     );
 
     const response = await request.text();
+    loader.style.display = "none";
+
     if (response === "200") {
         form.innerHTML = updateFormOk;
     } else {
