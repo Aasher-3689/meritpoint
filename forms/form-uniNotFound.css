@@ -82,3 +82,7 @@ footer, footer a, footer p {
 footer a:hover {
     cursor: url(../assets/images/pointer.png), auto;
 }
+
+/*///////////////////////////////////////////////////////////////////*/
+
+@media only screen and (max-width:465px) {header {padding: 2rem 1.5rem;}}
