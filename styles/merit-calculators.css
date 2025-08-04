@@ -55,7 +55,7 @@ header {
     align-items: center;
     padding: 2rem 3rem;
     a, a span{
-        font-size: 2rem;
+        font-size: 2rem; font-weight: bold;
         text-decoration: none;
         font-family: "3", "sans-serif";
         cursor: url("../assets/images/pointer.png"), auto;
