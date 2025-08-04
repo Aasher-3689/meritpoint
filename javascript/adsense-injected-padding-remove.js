@@ -6,6 +6,7 @@ function adsenseInjectedPaddingRemove() {
     if (currentBodyStyles.paddingBottom !== "0px" || currentBodyStyles.paddingTop !== "0px") {
         document.body.style.paddingBottom = "0px";
         document.body.style.paddingTop = "0px";
+        console.log(`Body's padding changed: ${currentBodyStyles.paddingBottom} --> 0px`);
     }
 }
 adsenseInjectedPaddingRemove();
@@ -13,7 +14,7 @@ adsenseInjectedPaddingRemove();
 
 
 const observer = new MutationObserver(adsenseInjectedPaddingRemove);
-observer.observe(document.body, {childList: true, subtree: true});
+observer.observe(document.body, { attributes: true, attributeFilter: ['style'] });
 
 
 
