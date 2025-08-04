@@ -21,7 +21,7 @@ function updateResult() {
 
     if ((!isNaN(matricT) && !isNaN(matricO) && matricT!=0 && matricT>=matricO)
         && (!isNaN(fscT) && !isNaN(fscO) && fscT!=0 && fscT>=fscO)) {
-        result += ((matricO+fscO)/(matricT+fscT)) * 75;
+        result += (((matricO/4)+fscO)/((matricT/4)+fscT)) * 75;
         resultDiv.innerText = result.toFixed(2);
         updateRing(result);
     }
