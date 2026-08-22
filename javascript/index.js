@@ -18,7 +18,8 @@ const universities = [
     ["UVAS - University of Veterinary and Animal Sciences, Lahore", "uvas"],
     ["UAF - University of Agriculture, Faisalabad", "uaf"],
     ["GCUF - Government College University, Faisalabad", "gcuf"],
-    ["UL - University of Layyah", "ul"]
+    ["UL - University of Layyah", "ul"],
+    ["BU - Bahria University, All Campuses", "bahria"]
 ];
 
 /*
